@@ -16,25 +16,12 @@
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed"
-          href="assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-<div class="wapper">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
+            <div class="wapper">
             <button type="button" class="btn btn-navbar" data-toggle="collapse"
                     data-target=".nav-collapse">
                 <span class="icon-bar"></span>
@@ -51,21 +38,6 @@
                     <li class="">
                         <a href="./getting-started.html">用户模型</a>
                     </li>
-                    <li class="">
-                        <a href="./scaffolding.html">Scaffolding</a>
-                    </li>
-                    <li class="">
-                        <a href="./base-css.html">Base CSS</a>
-                    </li>
-                    <li class="">
-                        <a href="./components.html">Components</a>
-                    </li>
-                    <li class="">
-                        <a href="./javascript.html">JavaScript</a>
-                    </li>
-                    <li class="">
-                        <a href="./customize.html">Customize</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -74,8 +46,88 @@
 
 <div class="wapper">
     <div class="row-fluid">
-        <div class="span2">导航内容</div>
-        <div class="span10">...</div>
+        <div class="span2 trip-span">
+            <div class="trip-sidebar">
+                <ul class="nav nav-list">
+                  <li class="nav-header">用户模型</li>
+                  <li class="active"><a href="#download-bootstrap">导出数据</a></li>
+                  <li><a href="trip-myinfo.html">查看我的标签</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="span10 trip-span">
+            <div class="trip-container">
+                <h4>导出指定用户数据</h4>
+
+                <form action="#" target="_blank">
+                    <table class="table table-striped">
+                        <tr>
+                            <th class="trip-tr" width="150">类型</th>
+                            <th>条件</th>
+                        </tr>
+                        <tr>
+                            <td class="trip-tr">机票类型倾向：</td>
+                            <td>
+                                <label class="radio inline"><input type="radio"
+                                                                   name="flightType"/>未购买机票</label>
+                                <label class="radio inline"><input type="radio"
+                                                                   name="flightType"/>仅购买国内机票</label>
+                                <label class="radio inline"><input type="radio"
+                                                                   name="flightType"/>仅购买国际机票</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="trip-tr">设备倾向：</td>
+                            <td>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="deviceType"/>无法分类</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="trip-tr">店铺类型倾向：</td>
+                            <td>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>极度非直营倾向</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有一定非直营倾向</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>无法分类</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>无法分类</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="trip-tr">用户成熟度：</td>
+                            <td>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>短体验用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有较长体验的活跃用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有非常长体验的活跃用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有长体验的沉睡用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有长体验的流失用户</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="trip-tr">用户成熟度：</td>
+                            <td>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>短体验用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有较长体验的活跃用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有非常长体验的活跃用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有长体验的沉睡用户</label>
+                                <label class="checkbox"><input type="checkbox" name="shopType"/>有长体验的流失用户</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-success" type="submit">导出Excel数据</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
