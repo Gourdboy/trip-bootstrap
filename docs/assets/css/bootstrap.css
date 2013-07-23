@@ -2282,7 +2282,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("http://img04.taobaocdn.com/tps/i4/T1xvRBFk4fXXcIVv2D-469-159.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -2306,7 +2306,7 @@ table th[class*="span"],
 .dropdown-submenu:focus > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"],
 .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("http://img03.taobaocdn.com/tps/i3/T1TZBNFdRgXXcIVv2D-469-159.png");
 }
 
 .icon-glass {
@@ -6133,7 +6133,7 @@ a.badge:focus {
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 55px;
   background: #f3f3f3;
 }
 
